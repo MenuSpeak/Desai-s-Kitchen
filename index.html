@@ -1198,9 +1198,21 @@
 
    <div class="tabs-scroll">
 <button class="tab active" data-cat="all">🍽️ All Items</button>
-<button class="tab" data-cat="बिरयानी">🍚 Biryani Special</button>
-<button class="tab" data-cat="स्टार्टर">🍗 Starters</button>
-              </div>  
+<button class="tab" data-cat="PAPAD & SIDES">🍟 Papad & Sides</button>
+<button class="tab" data-cat="VEG STARTERS">🥦 Veg Starters</button>
+<button class="tab" data-cat="NON-VEG STARTERS">🍗 Non-Veg Starters</button>
+<button class="tab" data-cat="VEG MAIN COURSE">🍲 Veg Main Course</button>
+<button class="tab" data-cat="CHICKEN MAIN COURSE">🍛 Chicken Main Course</button>
+<button class="tab" data-cat="MUTTON DISHES">🥩 Mutton Dishes</button>
+<button class="tab" data-cat="EGG DISHES">🍳 Egg Dishes</button>
+<button class="tab" data-cat="CHINESE (VEG & NON-VEG)">🍜 Chinese</button>
+<button class="tab" data-cat="TANDOOR SPECIAL">🔥 Tandoor Special</button>
+<button class="tab" data-cat="BREADS & ROTI">🫓 Breads & Roti</button>
+<button class="tab" data-cat="RICE & BIRYANI">🍚 Rice & Biryani</button>
+<button class="tab" data-cat="THALI & SALAD">🍱 Thali & Salad</button>
+<button class="tab" data-cat="SOUPS">🥣 Soups</button>
+<button class="tab" data-cat="BEVERAGES">🥤 Beverages</button>
+               </div>  
                 </div>
             </div>
 
@@ -1344,8 +1356,159 @@
     <script>
         // Menu Data - FIXED VERSION
         const data = [
+  {"id": 1, "cat": "PAPAD & SIDES", "name": "Dry Papad", "price": "30/-", "desc": "Plain roasted crispy papad", "tags": ["Veg", "Sides"], "img": "img/dry_papad.jpeg"},
+  {"id": 2, "cat": "PAPAD & SIDES", "name": "Fry Papad", "price": "40/-", "desc": "Deep-fried crispy papad", "tags": ["Veg", "Sides"], "img": "img/fry_papad.jpeg"},
+  {"id": 3, "cat": "PAPAD & SIDES", "name": "Masala Papad", "price": "60/-", "desc": "Roasted papad topped with spicy onion-tomato mix", "tags": ["Veg", "Sides", "Spicy"], "img": "img/masala_papad.jpeg"},
+  {"id": 4, "cat": "PAPAD & SIDES", "name": "Finger Chips", "price": "120/-", "desc": "Crispy salted french fries", "tags": ["Veg", "Sides", "Fried"], "img": "img/finger_chips.jpeg"},
 
+  {"id": 5, "cat": "VEG STARTERS", "name": "Gobi Manchurian", "price": "160/-", "desc": "Crispy cauliflower tossed in soy garlic sauce", "tags": ["Veg", "Starters", "Chinese"], "img": "img/gobi_manchurian.jpeg"},
+  {"id": 6, "cat": "VEG STARTERS", "name": "Gobi Chilly / 65", "price": "160/-", "desc": "Spicy and crispy cauliflower florets", "tags": ["Veg", "Starters", "Spicy"], "img": "img/gobi_chilly.jpeg"},
+  {"id": 7, "cat": "VEG STARTERS", "name": "Paneer 65", "price": "200/-", "desc": "Extra spicy and crispy paneer cubes", "tags": ["Veg", "Starters", "Paneer", "Spicy"], "img": "img/paneer_65.jpeg"},
+  {"id": 8, "cat": "VEG STARTERS", "name": "Paneer Chilly", "price": "220/-", "desc": "Spicy Indo-Chinese paneer starter", "tags": ["Veg", "Starters", "Paneer", "Chinese"], "img": "img/paneer_chilly.jpeg"},
+  {"id": 9, "cat": "VEG STARTERS", "name": "Paneer KFC", "price": "220/-", "desc": "Extra crunchy fried paneer bites", "tags": ["Veg", "Starters", "Paneer", "Crispy"], "img": "img/paneer_kfc.jpeg"},
+  {"id": 10, "cat": "VEG STARTERS", "name": "Baby Corn Chilly", "price": "180/-", "desc": "Spicy Indo-Chinese baby corn starter", "tags": ["Veg", "Starters", "Chinese"], "img": "img/babycorn_chilly.jpeg"},
+  {"id": 11, "cat": "VEG STARTERS", "name": "Baby Corn Manchurian", "price": "180/-", "desc": "Crispy baby corn tossed in Manchurian sauce", "tags": ["Veg", "Starters", "Chinese"], "img": "img/babycorn_manchurian.jpeg"},
+  {"id": 12, "cat": "VEG STARTERS", "name": "Mashroom Chilly", "price": "180/-", "desc": "Spicy Indo-Chinese mushroom starter", "tags": ["Veg", "Starters", "Chinese"], "img": "img/mashroom_chilly.jpeg"},
+  {"id": 13, "cat": "VEG STARTERS", "name": "Mashroom Manchurian", "price": "180/-", "desc": "Mushrooms tossed in Manchurian sauce", "tags": ["Veg", "Starters", "Chinese"], "img": "img/mashroom_manchurian.jpeg"},
+  {"id": 14, "cat": "VEG STARTERS", "name": "Potato KFC", "price": "140/-", "desc": "Extra crunchy fried potato bites", "tags": ["Veg", "Starters", "Crispy"], "img": "img/potato_kfc.jpeg"},
 
+  {"id": 15, "cat": "NON-VEG STARTERS", "name": "Chicken 65", "price": "220/-", "desc": "Spicy and crispy deep-fried chicken", "tags": ["Non-Veg", "Starters", "Chicken", "Spicy"], "img": "img/chicken_65.jpeg"},
+  {"id": 16, "cat": "NON-VEG STARTERS", "name": "Chicken Kabab", "price": "250/-", "desc": "Spicy deep-fried chicken chunks", "tags": ["Non-Veg", "Starters", "Chicken", "Fried"], "img": "img/chicken_kabab.jpeg"},
+  {"id": 17, "cat": "NON-VEG STARTERS", "name": "Chicken Chilly / Manchurian", "price": "240/-", "desc": "Indo-Chinese style chicken starter", "tags": ["Non-Veg", "Starters", "Chicken", "Chinese"], "img": "img/chicken_chilly.jpeg"},
+  {"id": 18, "cat": "NON-VEG STARTERS", "name": "Chicken KFC / Popcorn", "price": "240/-", "desc": "Extra crispy bite-sized chicken", "tags": ["Non-Veg", "Starters", "Chicken", "Crispy"], "img": "img/chicken_popcorn.jpeg"},
+  {"id": 19, "cat": "NON-VEG STARTERS", "name": "Chicken Lollipop", "price": "220/-", "desc": "Crispy deep-fried chicken wings", "tags": ["Non-Veg", "Starters", "Chicken"], "img": "img/chicken_lollipop.jpeg"},
+  {"id": 20, "cat": "NON-VEG STARTERS", "name": "Chicken Lolipop Toss", "price": "240/-", "desc": "Chicken lollipop tossed in spicy sauce", "tags": ["Non-Veg", "Starters", "Chicken", "Spicy"], "img": "img/chicken_lollipop_toss.jpeg"},
+  {"id": 21, "cat": "NON-VEG STARTERS", "name": "Chicken Drumstick", "price": "240/-", "desc": "Spicy and crispy chicken drumsticks", "tags": ["Non-Veg", "Starters", "Chicken"], "img": "img/chicken_drumstick.jpeg"},
+  {"id": 22, "cat": "NON-VEG STARTERS", "name": "Chicken Dry / Oil Fry", "price": "240/-", "desc": "Traditional pan-fried spicy chicken", "tags": ["Non-Veg", "Starters", "Chicken", "Dry"], "img": "img/chicken_dry_fry.jpeg"},
+  {"id": 23, "cat": "NON-VEG STARTERS", "name": "Chicken Pepper Fry", "price": "240/-", "desc": "Spicy chicken tossed with freshly crushed black pepper", "tags": ["Non-Veg", "Starters", "Chicken", "Spicy"], "img": "img/chicken_pepper_fry.jpeg"},
+  {"id": 24, "cat": "NON-VEG STARTERS", "name": "Chicken Wings", "price": "240/-", "desc": "Classic fried chicken wings", "tags": ["Non-Veg", "Starters", "Chicken"], "img": "img/chicken_wings.jpeg"},
+  {"id": 25, "cat": "NON-VEG STARTERS", "name": "Chicken Wings Chilly", "price": "260/-", "desc": "Spicy chicken wings tossed in chilly sauce", "tags": ["Non-Veg", "Starters", "Chicken", "Spicy"], "img": "img/chicken_wings_chilly.jpeg"},
+  {"id": 26, "cat": "NON-VEG STARTERS", "name": "Chicken Wings KFC", "price": "260/-", "desc": "Extra crispy fried chicken wings", "tags": ["Non-Veg", "Starters", "Chicken", "Crispy"], "img": "img/chicken_wings_kfc.jpeg"},
+  {"id": 27, "cat": "NON-VEG STARTERS", "name": "Chicken Harabhara Kabab", "price": "240/-", "desc": "Chicken infused with fresh green herbs", "tags": ["Non-Veg", "Starters", "Chicken"], "img": "img/chicken_harabhara.jpeg"},
+  {"id": 28, "cat": "NON-VEG STARTERS", "name": "Chicken Pudina", "price": "220/-", "desc": "Chicken cooked with a refreshing mint flavor", "tags": ["Non-Veg", "Starters", "Chicken"], "img": "img/chicken_pudina.jpeg"},
+  {"id": 29, "cat": "NON-VEG STARTERS", "name": "Chicken Garlic", "price": "240/-", "desc": "Chicken chunks tossed in a strong garlic sauce", "tags": ["Non-Veg", "Starters", "Chicken"], "img": "img/chicken_garlic.jpeg"},
+  {"id": 30, "cat": "NON-VEG STARTERS", "name": "Peri Peri Chicken Drumstick", "price": "260/-", "desc": "Spicy peri peri seasoned drumsticks", "tags": ["Non-Veg", "Starters", "Chicken", "Spicy"], "img": "img/peri_peri_drumstick.jpeg"},
+  {"id": 31, "cat": "NON-VEG STARTERS", "name": "Lemon Chicken", "price": "260/-", "desc": "Tangy and flavorful lemon-infused chicken", "tags": ["Non-Veg", "Starters", "Chicken", "Tangy"], "img": "img/lemon_chicken.jpeg"},
+
+  {"id": 32, "cat": "VEG MAIN COURSE", "name": "Mix Veg (Creamy Sause)", "price": "200/-", "desc": "Assorted vegetables in a rich creamy gravy", "tags": ["Veg", "Main Course", "Creamy"], "img": "img/mix_veg_creamy.jpeg"},
+  {"id": 33, "cat": "VEG MAIN COURSE", "name": "Dal Tadka", "price": "190/-", "desc": "Yellow lentils tempered with garlic and cumin", "tags": ["Veg", "Main Course", "Dal"], "img": "img/dal_tadka.jpeg"},
+  {"id": 34, "cat": "VEG MAIN COURSE", "name": "Dal Fry", "price": "190/-", "desc": "Yellow lentils cooked with spices", "tags": ["Veg", "Main Course", "Dal"], "img": "img/dal_fry.jpeg"},
+  {"id": 35, "cat": "VEG MAIN COURSE", "name": "Dal Makhani", "price": "210/-", "desc": "Slow-cooked creamy black lentils", "tags": ["Veg", "Main Course", "Dal", "Creamy"], "img": "img/dal_makhani.jpeg"},
+  {"id": 36, "cat": "VEG MAIN COURSE", "name": "Dal Handi", "price": "210/-", "desc": "Rich lentil curry slow-cooked in a handi", "tags": ["Veg", "Main Course", "Dal"], "img": "img/dal_handi.jpeg"},
+  {"id": 37, "cat": "VEG MAIN COURSE", "name": "Dal Palak", "price": "210/-", "desc": "Lentils cooked with healthy spinach", "tags": ["Veg", "Main Course", "Dal", "Healthy"], "img": "img/dal_palak.jpeg"},
+  {"id": 38, "cat": "VEG MAIN COURSE", "name": "Mattar Paneer", "price": "210/-", "desc": "Classic green peas and paneer curry", "tags": ["Veg", "Main Course", "Paneer"], "img": "img/mattar_paneer.jpeg"},
+  {"id": 39, "cat": "VEG MAIN COURSE", "name": "Shahi Paneer", "price": "210/-", "desc": "Royal creamy paneer preparation", "tags": ["Veg", "Main Course", "Paneer", "Creamy"], "img": "img/shahi_paneer.jpeg"},
+  {"id": 40, "cat": "VEG MAIN COURSE", "name": "Palak Paneer", "price": "210/-", "desc": "Paneer cubes in a smooth spinach gravy", "tags": ["Veg", "Main Course", "Paneer", "Healthy"], "img": "img/palak_paneer.jpeg"},
+  {"id": 41, "cat": "VEG MAIN COURSE", "name": "Kadai Paneer", "price": "210/-", "desc": "Paneer cooked with bell peppers and whole spices", "tags": ["Veg", "Main Course", "Paneer"], "img": "img/kadai_paneer.jpeg"},
+  {"id": 42, "cat": "VEG MAIN COURSE", "name": "Mashroom Masala", "price": "200/-", "desc": "Spiced mushroom curry", "tags": ["Veg", "Main Course"], "img": "img/mashroom_masala.jpeg"},
+  {"id": 43, "cat": "VEG MAIN COURSE", "name": "Babycorn Masala", "price": "200/-", "desc": "Spiced baby corn gravy", "tags": ["Veg", "Main Course"], "img": "img/babycorn_masala.jpeg"},
+  {"id": 44, "cat": "VEG MAIN COURSE", "name": "Bhendi Masala", "price": "180/-", "desc": "Spiced okra curry", "tags": ["Veg", "Main Course"], "img": "img/bhendi_masala.jpeg"},
+  {"id": 45, "cat": "VEG MAIN COURSE", "name": "Alo Gobi", "price": "180/-", "desc": "Classic potato and cauliflower curry", "tags": ["Veg", "Main Course"], "img": "img/alo_gobi.jpeg"},
+  {"id": 46, "cat": "VEG MAIN COURSE", "name": "Kaju Masala", "price": "240/-", "desc": "Rich and spicy cashew nut preparation", "tags": ["Veg", "Main Course", "Premium"], "img": "img/kaju_masala.jpeg"},
+
+  {"id": 47, "cat": "CHICKEN MAIN COURSE", "name": "Butter Chicken", "price": "360/-", "desc": "Classic creamy and sweet-spicy butter chicken", "tags": ["Non-Veg", "Main Course", "Chicken", "Creamy"], "img": "img/butter_chicken.jpeg"},
+  {"id": 48, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Masala", "price": "360/-", "desc": "Spiced chicken pieces in a thick gravy", "tags": ["Non-Veg", "Main Course", "Chicken"], "img": "img/chicken_masala.jpeg"},
+  {"id": 49, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Kolhapuri", "price": "360/-", "desc": "Extra spicy Kolhapuri style chicken curry", "tags": ["Non-Veg", "Main Course", "Chicken", "Spicy"], "img": "img/chicken_kolhapuri.jpeg"},
+  {"id": 50, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Hyderabadi", "price": "360/-", "desc": "Chicken cooked in a rich spinach and mint gravy", "tags": ["Non-Veg", "Main Course", "Chicken"], "img": "img/chicken_hyderabadi.jpeg"},
+  {"id": 51, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Handi", "price": "360/-", "desc": "Rich chicken curry slow-cooked in a handi", "tags": ["Non-Veg", "Main Course", "Chicken"], "img": "img/chicken_handi.jpeg"},
+  {"id": 52, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Kadai", "price": "360/-", "desc": "Chicken cooked with bell peppers and crushed spices", "tags": ["Non-Veg", "Main Course", "Chicken"], "img": "img/chicken_kadai.jpeg"},
+  {"id": 53, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Palak", "price": "340/-", "desc": "Chicken cooked in a healthy spinach gravy", "tags": ["Non-Veg", "Main Course", "Chicken", "Healthy"], "img": "img/chicken_palak.jpeg"},
+  {"id": 54, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Cafriyal", "price": "360/-", "desc": "Goan style green spicy chicken preparation", "tags": ["Non-Veg", "Main Course", "Chicken", "Spicy"], "img": "img/chicken_cafriyal.jpeg"},
+  {"id": 55, "cat": "CHICKEN MAIN COURSE", "name": "Chicken Maharaja", "price": "360/-", "desc": "Chef's special rich and royal chicken dish", "tags": ["Non-Veg", "Main Course", "Chicken", "Premium"], "img": "img/chicken_maharaja.jpeg"},
+
+  {"id": 56, "cat": "MUTTON DISHES", "name": "Mutton Masala", "price": "420/-", "desc": "Thick spiced mutton curry", "tags": ["Non-Veg", "Main Course", "Mutton"], "img": "img/mutton_masala.jpeg"},
+  {"id": 57, "cat": "MUTTON DISHES", "name": "Mutton Kolhapuri", "price": "420/-", "desc": "Extra spicy Kolhapuri style mutton", "tags": ["Non-Veg", "Main Course", "Mutton", "Spicy"], "img": "img/mutton_kolhapuri.jpeg"},
+  {"id": 58, "cat": "MUTTON DISHES", "name": "Muttan Makhanwala", "price": "420/-", "desc": "Mutton cooked in a buttery tomato gravy", "tags": ["Non-Veg", "Main Course", "Mutton", "Creamy"], "img": "img/mutton_makhanwala.jpeg"},
+  {"id": 59, "cat": "MUTTON DISHES", "name": "Muttan Hundi", "price": "420/-", "desc": "Slow-cooked rich mutton curry", "tags": ["Non-Veg", "Main Course", "Mutton"], "img": "img/mutton_handi.jpeg"},
+  {"id": 60, "cat": "MUTTON DISHES", "name": "Muttan Kadai", "price": "420/-", "desc": "Mutton cooked with bell peppers and spices", "tags": ["Non-Veg", "Main Course", "Mutton"], "img": "img/mutton_kadai.jpeg"},
+  {"id": 61, "cat": "MUTTON DISHES", "name": "Muttan Garlic Masala", "price": "420/-", "desc": "Mutton cooked with a prominent garlic flavor", "tags": ["Non-Veg", "Main Course", "Mutton"], "img": "img/mutton_garlic.jpeg"},
+  {"id": 62, "cat": "MUTTON DISHES", "name": "Mutton Rogan Juice (Rogan Josh)", "price": "450/-", "desc": "Classic Kashmiri style aromatic mutton curry", "tags": ["Non-Veg", "Main Course", "Mutton", "Premium"], "img": "img/mutton_rogan.jpeg"},
+
+  {"id": 63, "cat": "EGG DISHES", "name": "Egg Masala", "price": "210/-", "desc": "Boiled eggs cooked in a thick spicy masala", "tags": ["Non-Veg", "Main Course", "Egg"], "img": "img/egg_masala.jpeg"},
+  {"id": 64, "cat": "EGG DISHES", "name": "Egg Kolhapuri", "price": "210/-", "desc": "Extra spicy Kolhapuri style egg curry", "tags": ["Non-Veg", "Main Course", "Egg", "Spicy"], "img": "img/egg_kolhapuri.jpeg"},
+  {"id": 65, "cat": "EGG DISHES", "name": "Egg Makhanwala", "price": "210/-", "desc": "Eggs cooked in a rich buttery tomato gravy", "tags": ["Non-Veg", "Main Course", "Egg", "Creamy"], "img": "img/egg_makhanwala.jpeg"},
+  {"id": 66, "cat": "EGG DISHES", "name": "Egg Maharaja", "price": "220/-", "desc": "Rich and premium egg preparation", "tags": ["Non-Veg", "Main Course", "Egg", "Premium"], "img": "img/egg_maharaja.jpeg"},
+  {"id": 67, "cat": "EGG DISHES", "name": "Egg Handi", "price": "210/-", "desc": "Slow-cooked egg curry", "tags": ["Non-Veg", "Main Course", "Egg"], "img": "img/egg_handi.jpeg"},
+  {"id": 68, "cat": "EGG DISHES", "name": "Egg Kadai", "price": "210/-", "desc": "Eggs cooked with bell peppers and whole spices", "tags": ["Non-Veg", "Main Course", "Egg"], "img": "img/egg_kadai.jpeg"},
+  {"id": 69, "cat": "EGG DISHES", "name": "Boild Egg (2)", "price": "40/-", "desc": "Two protein-packed hard-boiled eggs", "tags": ["Non-Veg", "Egg", "Healthy"], "img": "img/boiled_egg.jpeg"},
+  {"id": 70, "cat": "EGG DISHES", "name": "Masala Omlet", "price": "80/-", "desc": "Fluffy omelette loaded with onions and spices", "tags": ["Non-Veg", "Egg"], "img": "img/masala_omelette.jpeg"},
+
+  {"id": 71, "cat": "CHINESE (VEG & NON-VEG)", "name": "Veg Fried Rice", "price": "140/-", "desc": "Indo-Chinese style vegetable fried rice", "tags": ["Veg", "Chinese", "Rice"], "img": "img/veg_fried_rice.jpeg"},
+  {"id": 72, "cat": "CHINESE (VEG & NON-VEG)", "name": "Special Egg Fried Rice", "price": "140/-", "desc": "Fried rice tossed with scrambled eggs and veggies", "tags": ["Non-Veg", "Chinese", "Rice", "Egg"], "img": "img/egg_fried_rice.jpeg"},
+  {"id": 73, "cat": "CHINESE (VEG & NON-VEG)", "name": "Veg Schezwan Fried Rice", "price": "160/-", "desc": "Spicy Schezwan style vegetable fried rice", "tags": ["Veg", "Chinese", "Rice", "Spicy"], "img": "img/veg_schezwan_rice.jpeg"},
+  {"id": 74, "cat": "CHINESE (VEG & NON-VEG)", "name": "Egg Schezwan Fried Rice", "price": "160/-", "desc": "Spicy Schezwan style egg fried rice", "tags": ["Non-Veg", "Chinese", "Rice", "Egg", "Spicy"], "img": "img/egg_schezwan_rice.jpeg"},
+  {"id": 75, "cat": "CHINESE (VEG & NON-VEG)", "name": "Veg Noodles", "price": "140/-", "desc": "Stir-fried noodles with mixed vegetables", "tags": ["Veg", "Chinese", "Noodles"], "img": "img/veg_noodles.jpeg"},
+  {"id": 76, "cat": "CHINESE (VEG & NON-VEG)", "name": "Chicken Fried Rice", "price": "160/-", "desc": "Fried rice tossed with chicken chunks", "tags": ["Non-Veg", "Chinese", "Rice", "Chicken"], "img": "img/chicken_fried_rice.jpeg"},
+  {"id": 77, "cat": "CHINESE (VEG & NON-VEG)", "name": "Chicken Schezwan Fried Rice", "price": "180/-", "desc": "Spicy Schezwan style chicken fried rice", "tags": ["Non-Veg", "Chinese", "Rice", "Chicken", "Spicy"], "img": "img/chicken_schezwan_rice.jpeg"},
+  {"id": 78, "cat": "CHINESE (VEG & NON-VEG)", "name": "Veg Schezwan Noodles", "price": "160/-", "desc": "Spicy Schezwan style vegetable noodles", "tags": ["Veg", "Chinese", "Noodles", "Spicy"], "img": "img/veg_schezwan_noodles.jpeg"},
+  {"id": 79, "cat": "CHINESE (VEG & NON-VEG)", "name": "Paneer Noodles", "price": "160/-", "desc": "Stir-fried noodles with paneer cubes", "tags": ["Veg", "Chinese", "Noodles", "Paneer"], "img": "img/paneer_noodles.jpeg"},
+  {"id": 80, "cat": "CHINESE (VEG & NON-VEG)", "name": "Chicken Hongkong Rice", "price": "180/-", "desc": "Special Hong Kong style chicken fried rice", "tags": ["Non-Veg", "Chinese", "Rice", "Chicken"], "img": "img/chicken_hongkong_rice.jpeg"},
+  {"id": 81, "cat": "CHINESE (VEG & NON-VEG)", "name": "Gobi Fried Rice", "price": "140/-", "desc": "Fried rice tossed with cauliflower bits", "tags": ["Veg", "Chinese", "Rice"], "img": "img/gobi_fried_rice.jpeg"},
+  {"id": 82, "cat": "CHINESE (VEG & NON-VEG)", "name": "Chicken Singapore Rice", "price": "180/-", "desc": "Special Singapore style chicken fried rice", "tags": ["Non-Veg", "Chinese", "Rice", "Chicken"], "img": "img/chicken_singapore_rice.jpeg"},
+  {"id": 83, "cat": "CHINESE (VEG & NON-VEG)", "name": "Chicken Noodles", "price": "160/-", "desc": "Stir-fried noodles with chicken chunks", "tags": ["Non-Veg", "Chinese", "Noodles", "Chicken"], "img": "img/chicken_noodles.jpeg"},
+  {"id": 84, "cat": "CHINESE (VEG & NON-VEG)", "name": "Chicken Schezwan Noodle", "price": "180/-", "desc": "Spicy Schezwan style chicken noodles", "tags": ["Non-Veg", "Chinese", "Noodles", "Chicken", "Spicy"], "img": "img/chicken_schezwan_noodles.jpeg"},
+  {"id": 85, "cat": "CHINESE (VEG & NON-VEG)", "name": "Egg Noodles", "price": "120/-", "desc": "Stir-fried noodles with scrambled eggs", "tags": ["Non-Veg", "Chinese", "Noodles", "Egg"], "img": "img/egg_noodles.jpeg"},
+  {"id": 86, "cat": "CHINESE (VEG & NON-VEG)", "name": "Egg Schezwan Noodles", "price": "140/-", "desc": "Spicy Schezwan style egg noodles", "tags": ["Non-Veg", "Chinese", "Noodles", "Egg", "Spicy"], "img": "img/egg_schezwan_noodles.jpeg"},
+
+  {"id": 87, "cat": "TANDOOR SPECIAL", "name": "Paneer Tikka", "price": "260/-", "desc": "Spicy and smoky boneless roasted paneer chunks", "tags": ["Veg", "Tandoor", "Paneer"], "img": "img/paneer_tikka.jpeg"},
+  {"id": 88, "cat": "TANDOOR SPECIAL", "name": "Veg Seekh Kabab", "price": "260/-", "desc": "Minced mixed vegetable skewers roasted in tandoor", "tags": ["Veg", "Tandoor", "Kabab"], "img": "img/veg_seekh_kabab.jpeg"},
+  {"id": 89, "cat": "TANDOOR SPECIAL", "name": "Mashroom Tikka", "price": "250/-", "desc": "Spiced and roasted mushroom chunks", "tags": ["Veg", "Tandoor", "Mashroom"], "img": "img/mashroom_tikka.jpeg"},
+  {"id": 90, "cat": "TANDOOR SPECIAL", "name": "Tandoori Chicken (Half / Full)", "price": "350/- | 520/-", "desc": "Classic spicy clay-oven roasted chicken", "tags": ["Non-Veg", "Tandoor", "Chicken"], "img": "img/tandoori_chicken.jpeg"},
+  {"id": 91, "cat": "TANDOOR SPECIAL", "name": "Tangdi (2 Pc)", "price": "250/-", "desc": "Spicy roasted chicken drumsticks", "tags": ["Non-Veg", "Tandoor", "Chicken"], "img": "img/tangdi_kebab.jpeg"},
+  {"id": 92, "cat": "TANDOOR SPECIAL", "name": "Chicken Tikka", "price": "350/-", "desc": "Smoky boneless roasted chicken chunks", "tags": ["Non-Veg", "Tandoor", "Chicken"], "img": "img/chicken_tikka.jpeg"},
+  {"id": 93, "cat": "TANDOOR SPECIAL", "name": "Afgani Tikka", "price": "350/-", "desc": "Rich and creamy mild roasted chicken chunks", "tags": ["Non-Veg", "Tandoor", "Chicken", "Creamy"], "img": "img/afgani_tikka.jpeg"},
+  {"id": 94, "cat": "TANDOOR SPECIAL", "name": "Tandoor Lollipop", "price": "350/-", "desc": "Tandoor roasted chicken wings", "tags": ["Non-Veg", "Tandoor", "Chicken"], "img": "img/tandoor_lollipop.jpeg"},
+  {"id": 95, "cat": "TANDOOR SPECIAL", "name": "Chicken Seekh Kabab", "price": "350/-", "desc": "Minced chicken skewers roasted to perfection", "tags": ["Non-Veg", "Tandoor", "Chicken", "Kabab"], "img": "img/chicken_seekh_kabab.jpeg"},
+
+  {"id": 96, "cat": "BREADS & ROTI", "name": "Plain Chapati", "price": "20/-", "desc": "Soft whole wheat Indian flatbread", "tags": ["Veg", "Breads"], "img": "img/plain_chapati.jpeg"},
+  {"id": 97, "cat": "BREADS & ROTI", "name": "Butter Chapati", "price": "30/-", "desc": "Whole wheat chapati brushed with butter", "tags": ["Veg", "Breads", "Butter"], "img": "img/butter_chapati.jpeg"},
+  {"id": 98, "cat": "BREADS & ROTI", "name": "Lacha Parota", "price": "30/-", "desc": "Multi-layered flaky wheat flatbread", "tags": ["Veg", "Breads"], "img": "img/lacha_paratha.jpeg"},
+  {"id": 99, "cat": "BREADS & ROTI", "name": "Tandoor Roti", "price": "30/-", "desc": "Wheat flatbread baked in clay oven", "tags": ["Veg", "Breads"], "img": "img/tandoor_roti.jpeg"},
+  {"id": 100, "cat": "BREADS & ROTI", "name": "Butter Lacha Parota", "price": "40/-", "desc": "Flaky multi-layered paratha with butter", "tags": ["Veg", "Breads", "Butter"], "img": "img/butter_lacha.jpeg"},
+  {"id": 101, "cat": "BREADS & ROTI", "name": "Tandoor Kulcha", "price": "30/-", "desc": "Soft leavened tandoor baked bread", "tags": ["Veg", "Breads"], "img": "img/tandoor_kulcha.jpeg"},
+  {"id": 102, "cat": "BREADS & ROTI", "name": "Butter Kulcha", "price": "40/-", "desc": "Soft leavened bread brushed with butter", "tags": ["Veg", "Breads", "Butter"], "img": "img/butter_kulcha.jpeg"},
+  {"id": 103, "cat": "BREADS & ROTI", "name": "Jawar Kadak Roti", "price": "20/-", "desc": "Crispy traditional jowar flatbread", "tags": ["Veg", "Breads", "Healthy", "Crunchy"], "img": "img/jawar_kadak_roti.jpeg"},
+
+  {"id": 104, "cat": "RICE & BIRYANI", "name": "Plain Rice", "price": "60/-", "desc": "Plain steamed white rice", "tags": ["Veg", "Rice"], "img": "img/plain_rice.jpeg"},
+  {"id": 105, "cat": "RICE & BIRYANI", "name": "Jeera Rice", "price": "80/-", "desc": "Rice tempered with cumin seeds", "tags": ["Veg", "Rice"], "img": "img/jeera_rice.jpeg"},
+  {"id": 106, "cat": "RICE & BIRYANI", "name": "Ghee Rice", "price": "120/-", "desc": "Aromatic rice tossed in pure desi ghee", "tags": ["Veg", "Rice", "Premium"], "img": "img/ghee_rice.jpeg"},
+  {"id": 107, "cat": "RICE & BIRYANI", "name": "Butter Rice", "price": "120/-", "desc": "Rice tossed with fresh butter", "tags": ["Veg", "Rice", "Butter"], "img": "img/butter_rice.jpeg"},
+  {"id": 108, "cat": "RICE & BIRYANI", "name": "Kushka", "price": "120/-", "desc": "Flavorful spiced empty biryani rice", "tags": ["Veg", "Rice", "Spicy"], "img": "img/kushka.jpeg"},
+  {"id": 109, "cat": "RICE & BIRYANI", "name": "Masala Rice", "price": "120/-", "desc": "Spiced and flavorful rice", "tags": ["Veg", "Rice", "Spicy"], "img": "img/masala_rice.jpeg"},
+  {"id": 110, "cat": "RICE & BIRYANI", "name": "Curd Rice", "price": "100/-", "desc": "Soothing yogurt and rice mixed with tempering", "tags": ["Veg", "Rice", "Healthy"], "img": "img/curd_rice.jpeg"},
+  {"id": 111, "cat": "RICE & BIRYANI", "name": "Chicken Biryani", "price": "210/-", "desc": "Aromatic and spiced chicken biryani", "tags": ["Non-Veg", "Biryani", "Chicken"], "img": "img/chicken_biryani.jpeg"},
+  {"id": 112, "cat": "RICE & BIRYANI", "name": "Mutton Biryani", "price": "350/-", "desc": "Rich and flavorful mutton biryani", "tags": ["Non-Veg", "Biryani", "Mutton"], "img": "img/mutton_biryani.jpeg"},
+  {"id": 113, "cat": "RICE & BIRYANI", "name": "Egg Biryani", "price": "190/-", "desc": "Aromatic and spiced egg biryani", "tags": ["Non-Veg", "Biryani", "Egg"], "img": "img/egg_biryani.jpeg"},
+  {"id": 114, "cat": "RICE & BIRYANI", "name": "Veg Panner Biryani", "price": "200/-", "desc": "Vegetable biryani topped with paneer chunks", "tags": ["Veg", "Biryani", "Paneer"], "img": "img/veg_paneer_biryani.jpeg"},
+
+  {"id": 115, "cat": "THALI & SALAD", "name": "Chicken Salad", "price": "220/-", "desc": "Healthy mix of veggies and roasted chicken", "tags": ["Non-Veg", "Salad", "Chicken", "Healthy"], "img": "img/chicken_salad.jpeg"},
+  {"id": 116, "cat": "THALI & SALAD", "name": "Green Salad", "price": "90/-", "desc": "Freshly sliced cucumber, tomatoes, and onions", "tags": ["Veg", "Salad", "Healthy"], "img": "img/green_salad.jpeg"},
+  {"id": 117, "cat": "THALI & SALAD", "name": "Veg Thali", "price": "210/-", "desc": "Complete Desai's special veg meal", "tags": ["Veg", "Thali"], "img": "img/veg_thali.jpeg"},
+  {"id": 118, "cat": "THALI & SALAD", "name": "Goan Fish Thali", "price": "250/-", "desc": "Authentic Goan style seafood meal", "tags": ["Non-Veg", "Thali", "Seafood", "Fish"], "img": "img/goan_fish_thali.jpeg"},
+  {"id": 119, "cat": "THALI & SALAD", "name": "Chicken Thali", "price": "250/-", "desc": "Complete Desai's special chicken meal", "tags": ["Non-Veg", "Thali", "Chicken"], "img": "img/chicken_thali.jpeg"},
+  {"id": 120, "cat": "THALI & SALAD", "name": "Mutton Thali", "price": "350/-", "desc": "Complete Desai's special mutton meal", "tags": ["Non-Veg", "Thali", "Mutton"], "img": "img/mutton_thali.jpeg"},
+
+  {"id": 121, "cat": "SOUPS", "name": "Veg Manchow Soup", "price": "120/-", "desc": "Spicy Indo-Chinese clear soup with fried noodles", "tags": ["Veg", "Soup", "Spicy"], "img": "img/veg_manchow_soup.jpeg"},
+  {"id": 122, "cat": "SOUPS", "name": "Lemon Corriender Soup", "price": "120/-", "desc": "Tangy and refreshing clear vegetable soup", "tags": ["Veg", "Soup", "Healthy"], "img": "img/lemon_coriander_soup.jpeg"},
+  {"id": 123, "cat": "SOUPS", "name": "Palak Soup", "price": "120/-", "desc": "Healthy and creamy spinach soup", "tags": ["Veg", "Soup", "Healthy"], "img": "img/palak_soup.jpeg"},
+  {"id": 124, "cat": "SOUPS", "name": "Tomato Soup", "price": "140/-", "desc": "Classic warm and tangy tomato soup", "tags": ["Veg", "Soup", "Healthy"], "img": "img/tomato_soup.jpeg"},
+  {"id": 125, "cat": "SOUPS", "name": "Sweet Corn Soup", "price": "140/-", "desc": "Sweet and savory corn soup", "tags": ["Veg", "Soup", "Healthy"], "img": "img/sweet_corn_soup.jpeg"},
+  {"id": 126, "cat": "SOUPS", "name": "Baby Corn Mashroom Soup", "price": "160/-", "desc": "Rich soup with baby corn and mushrooms", "tags": ["Veg", "Soup"], "img": "img/babycorn_mushroom_soup.jpeg"},
+  {"id": 127, "cat": "SOUPS", "name": "Chicken Manchow Soup", "price": "140/-", "desc": "Spicy Indo-Chinese chicken soup with fried noodles", "tags": ["Non-Veg", "Soup", "Chicken"], "img": "img/chicken_manchow_soup.jpeg"},
+  {"id": 128, "cat": "SOUPS", "name": "Chicken Tangadi Soup", "price": "180/-", "desc": "Rich and flavorful chicken leg soup", "tags": ["Non-Veg", "Soup", "Chicken"], "img": "img/chicken_tangdi_soup.jpeg"},
+  {"id": 129, "cat": "SOUPS", "name": "Lemon Chicken Soup", "price": "140/-", "desc": "Tangy and refreshing chicken clear soup", "tags": ["Non-Veg", "Soup", "Chicken"], "img": "img/lemon_chicken_soup.jpeg"},
+  {"id": 130, "cat": "SOUPS", "name": "Lemon Corriander Chicken Soup", "price": "140/-", "desc": "Tangy chicken soup flavored with fresh coriander", "tags": ["Non-Veg", "Soup", "Chicken"], "img": "img/lemon_coriander_chicken_soup.jpeg"},
+
+  {"id": 131, "cat": "BEVERAGES", "name": "Coca Cola", "price": "20/-", "desc": "Chilled cola beverage", "tags": ["Veg", "Beverage", "Cold"], "img": "img/coca_cola.jpeg"},
+  {"id": 132, "cat": "BEVERAGES", "name": "Fanta", "price": "20/-", "desc": "Chilled orange soda", "tags": ["Veg", "Beverage", "Cold"], "img": "img/fanta.jpeg"},
+  {"id": 133, "cat": "BEVERAGES", "name": "Maza", "price": "20/-", "desc": "Sweet mango fruit drink", "tags": ["Veg", "Beverage", "Cold"], "img": "img/maza.jpeg"},
+  {"id": 134, "cat": "BEVERAGES", "name": "Limca", "price": "20/-", "desc": "Chilled lemon-lime soda", "tags": ["Veg", "Beverage", "Cold"], "img": "img/limca.jpeg"},
+  {"id": 135, "cat": "BEVERAGES", "name": "Thums Up", "price": "20/-", "desc": "Chilled strong cola", "tags": ["Veg", "Beverage", "Cold"], "img": "img/thums_up.jpeg"},
+  {"id": 136, "cat": "BEVERAGES", "name": "Lemon Soda", "price": "60/-", "desc": "Refreshing fresh lime soda", "tags": ["Veg", "Beverage", "Cold"], "img": "img/lemon_soda.jpeg"},
+  {"id": 137, "cat": "BEVERAGES", "name": "Butter Milk", "price": "60/-", "desc": "Refreshing chilled buttermilk", "tags": ["Veg", "Beverage", "Cold", "Healthy"], "img": "img/butter_milk.jpeg"},
+  {"id": 138, "cat": "BEVERAGES", "name": "Masala Butter Milk", "price": "80/-", "desc": "Spiced traditional buttermilk", "tags": ["Veg", "Beverage", "Cold", "Healthy"], "img": "img/masala_butter_milk.jpeg"},
+  {"id": 139, "cat": "BEVERAGES", "name": "Jeera", "price": "20/-", "desc": "Digestive cumin-flavored drink", "tags": ["Veg", "Beverage", "Cold"], "img": "img/jeera_drink.jpeg"},
+  {"id": 140, "cat": "BEVERAGES", "name": "Water (Small / Large)", "price": "10/- | 20/-", "desc": "Packaged drinking water", "tags": ["Veg", "Beverage", "Cold"], "img": "img/water_bottle.jpeg"},
 
           
 
